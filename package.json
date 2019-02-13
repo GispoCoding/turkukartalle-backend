@@ -1,0 +1,30 @@
+{
+  "name": "turkukartalle-backend",
+  "version": "0.1.0",
+  "description": "Turku kartalle Oskari PoC - backend",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GispoCoding/turkukartalle-backend.git"
+  },
+  "keywords": [
+    "Oskari",
+    "Gispo",
+    "Turku",
+    "GIS",
+    "FOSS4G",
+    "kartalle"
+  ],
+  "author": "Erno Mäkinen",
+  "license": "CC0-1.0",
+  "bugs": {
+    "url": "https://github.com/GispoCoding/turkukartalle-backend/issues"
+  },
+  "homepage": "https://github.com/GispoCoding/turkukartalle-backend#readme",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}
