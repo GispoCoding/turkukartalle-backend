@@ -10,8 +10,12 @@ Turku kartalle Oskari-sovellus PoC - backend-osan koodi
 sudo -u postgres psql
 
 Luo tietokanta:
-CREATE DATABASE turku_kartalle;
-\c turku_kartalle
-CREATE EXTENSION POSTGIS;
-CREATE USER turku WITH PASSWORD 'turku';
-GRANT ALL PRIVILEGES ON DATABASE turku_kartalle to turku;
+  CREATE DATABASE turku_kartalle;
+  \c turku_kartalle
+  CREATE EXTENSION POSTGIS;
+  CREATE EXTENSION "uuid-ossp";
+  CREATE USER turku WITH PASSWORD 'turku';
+  GRANT ALL PRIVILEGES ON DATABASE turku_kartalle to turku;
+  ctrl+d
+  sudo -u postgres psql -f turku_kartalle.sql
+  
