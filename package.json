@@ -25,6 +25,7 @@
   },
   "homepage": "https://github.com/GispoCoding/turkukartalle-backend#readme",
   "dependencies": {
-    "express": "^4.16.4"
+    "express": "^4.16.4",
+    "pg": "^7.8.0"
   }
 }
