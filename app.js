@@ -34,8 +34,13 @@ app.get('/features', (req, res) => {
             return feature;
 	});
 
+	const featureCollection = {
+	    type: 'FeatureCollection',
+	    features: features
+	}
+	
 	res.setHeader('Content-Type', 'application/json');
-	res.send(JSON.stringify(features));
+	res.send(JSON.stringify(featureCollection));
     });
 })
 
