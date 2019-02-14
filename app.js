@@ -22,7 +22,7 @@ app.get('/', (req, res) => res.send('Turku kartalle backend is alive!'))
 app.get('/features', (req, res) => {
     const query =
         'SELECT nimi, kuva_url, kuva_info_url, kuva_license_text, license_info_url, ' +
-        'ST_AsGeoJSON(geom) AS geom FROM turku_paikat';
+        'ST_AsGeoJSON(ST_Transform(geom, 3067)) AS geom FROM turku_paikat';
     
     client.query(query, (err, result) => {
 
@@ -43,6 +43,12 @@ app.get('/features', (req, res) => {
 
 	const featureCollection = {
 	    type: 'FeatureCollection',
+	    crs: {
+		type: 'name',
+		properties: {
+		    name: 'EPSG:3067'
+		}
+	    },
 	    features: features
 	}
 	
