@@ -3,9 +3,11 @@ Turku kartalle Oskari-sovellus PoC - backend-osan koodi
 
 ## Valmistelu
 
-### Asennukset
-
 Oletus, että käytössä on Ubuntu 18.04 -käyttöjärjestelmä.
+
+Halutessasi ota myös <a href="https://github.com/GispoCoding/turkukartalle-ui">turkukartalle-ui</a>-osan koodi käyttöön.
+
+### Asennukset
 
 PostgreSQL:n ja PostGIS:n asentaminen:
 <pre>
