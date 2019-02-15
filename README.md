@@ -5,7 +5,7 @@ Turku kartalle Oskari-sovellus PoC - backend-osan koodi
 
 Oletus, että käytössä on Ubuntu 18.04 -käyttöjärjestelmä.
 
-Halutessasi ota myös <a href="https://github.com/GispoCoding/turkukartalle-ui">turkukartalle-ui</a>-osan koodi käyttöön.
+Halutessasi ota myös <a href="https://github.com/GispoCoding/turkukartalle-ui">turkukartalle-ui</a>-osan koodi käyttöön. Voit kysyä jatkokehitykseen vinkkejä myös vaikkapa <a href="https://www.gispo.fi/">Gispolta</a>.
 
 ### Asennukset
 
@@ -41,3 +41,12 @@ sudo -u postgres psql -f turku_kartalle.sql
 export DATABASE_URL='postgresql://turku:turku@localhost/turku_kartalle' 
 node app.js
 </pre>
+
+## Kiitokset
+
+Sovelluksen toteutuksen tässä muodossa mahdollistivat:
++ Gispon ihmiset, http://www.gispo.fi/
++ Oskarin ihmiset ja sivusto, http://oskari.org/
++ Suomen evankelis-luterilainen kirkko (backend)
++ Build An Interactive Game of Thrones Map (Part I) - Node.js,  PostGIS, and Redis, https://blog.patricktriest.com/game-of-thrones-map-node-postgres-redis/ (backend)
++ Monet muut ihmiset ja tahot
